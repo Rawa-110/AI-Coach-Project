@@ -71,23 +71,18 @@ The system provides:
 ```
 AI-Coach-Project/
 │
-├── notebooks/
-│   └── AI_Squat_Analysis.ipynb
-│
+├── README.md
+├── requirements.txt
+├── AI_Squat_Analysis.ipynb
 ├── input/
 │   └── input_video.mp4
-│
 ├── output/
-│   └── analyzed_video.mp4
-│
+│   ├── output.mp4
+│   └── report.csv
 ├── images/
 │   ├── screenshot1.png
 │   └── screenshot2.png
-│
-├── requirements.txt
-├── README.md
 └── LICENSE
-```
 
 ---
 ## OpenCV Usage in the Project
