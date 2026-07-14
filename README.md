@@ -90,6 +90,38 @@ AI-Coach-Project/
 ```
 
 ---
+## OpenCV Usage in the Project
+
+This project uses **OpenCV** as the main computer vision library for processing video frames and displaying real-time analysis. OpenCV is integrated with the MoveNet pose estimation model to perform human pose tracking and squat analysis.
+
+### How OpenCV is Used
+
+- Read the input video using `cv2.VideoCapture()`.
+- Process each video frame individually.
+- Draw body keypoints (hip, knee, and ankle) using `cv2.circle()`.
+- Connect body joints with lines using `cv2.line()`.
+- Display real-time information such as:
+  - Squat repetition counter
+  - Knee angle
+  - Exercise status
+- Generate and save the processed output video with all visual annotations.
+
+### Object Tracking
+
+The project performs **Human Pose Tracking**, which is a type of **Object Tracking**. Instead of tracking a simple object such as a ball or a car, the system tracks the human body joints frame by frame using MoveNet and OpenCV. The tracked keypoints are then used to calculate knee angles, detect squat movements, count repetitions, and evaluate exercise quality.
+
+### OpenCV Functions Used
+
+- `cv2.VideoCapture()`
+- `cv2.circle()`
+- `cv2.line()`
+- `cv2.putText()`
+- OpenCV frame processing
+- Video output generation using OpenCV with FFmpeg
+
+### Conclusion
+
+OpenCV is responsible for video processing, frame handling, drawing body landmarks, displaying analysis results, and generating the final analyzed video. Combined with MoveNet, it enables accurate human pose tracking and real-time squat analysis.
 
 ## Requirements
 
