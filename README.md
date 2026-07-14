@@ -63,6 +63,8 @@ The system provides:
 - Real-time movement analysis
 
 ---
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac8fdb8d-24e0-4b68-96af-2d812cdb0be2" />
+
 
 ## Project Structure
 
