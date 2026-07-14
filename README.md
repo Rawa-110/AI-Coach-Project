@@ -1,84 +1,127 @@
 # AI-Coach-Project
- # AI Squat Analysis System
 
-## Project Idea
-An AI-based system that analyzes squat exercises using computer vision and pose detection to improve exercise performance and reduce injury risk.
+## AI Squat Analysis System
+
+### Project Category
+**Object Tracking (Human Pose Tracking using AI)**
 
 ---
 
-# Features
-- Real-time pose detection
-- Automatic squat counting
+## Project Idea
+
+AI Squat Analysis System is an AI-powered application that analyzes squat exercises using computer vision and human pose estimation. The system tracks body joints in real time, counts squat repetitions, evaluates exercise technique, and provides instant feedback to help users improve performance and reduce the risk of injuries.
+
+---
+
+## Features
+
+- Real-time human pose detection and tracking
+- Automatic squat repetition counting
+- Knee angle calculation
 - Technique evaluation (Good / Bad / Risk)
-- Video output with analysis
-- AI feedback system
+- AI-based feedback system
+- Processed video with skeleton overlay
+- Performance scoring for each repetition
 - Works on Google Colab
 
 ---
 
-# Technologies Used
+## Technologies Used
+
 - Python
-- TensorFlow
-- MoveNet (TensorFlow Hub)
 - OpenCV
+- TensorFlow
+- TensorFlow Hub (MoveNet)
 - NumPy
 - Pandas
 - Google Colab
 
 ---
 
-# System Output
+## System Workflow
+
+1. Load the input video.
+2. Detect body keypoints using MoveNet.
+3. Track body joints frame by frame.
+4. Calculate knee angles.
+5. Detect squat movement.
+6. Count repetitions.
+7. Evaluate squat quality.
+8. Generate the output video with analysis.
+
+---
+
+## System Output
+
 The system provides:
+
 - Processed video with skeleton overlay
-- Rep counter (number of squats)
+- Squat repetition counter
 - Knee angle tracking
+- Technique evaluation
 - Performance score for each repetition
 - Real-time movement analysis
 
 ---
 
-# Final Summary
-This project helps users improve squat technique using AI and prevents injuries by providing real-time feedback and movement analysis.
+## Project Structure
+
+```
+AI-Coach-Project/
+│
+├── notebooks/
+│   └── AI_Squat_Analysis.ipynb
+│
+├── input/
+│   └── input_video.mp4
+│
+├── output/
+│   └── analyzed_video.mp4
+│
+├── images/
+│   ├── screenshot1.png
+│   └── screenshot2.png
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
 
 ---
 
-# النظام الذكي لتحليل تمارين السكوات
+## Requirements
 
-## فكرة المشروع
-نظام يعتمد على الذكاء الاصطناعي والرؤية الحاسوبية لتحليل تمارين السكوات وتحسين الأداء وتقليل الإصابات.
+Install the required libraries:
 
----
-
-# المميزات
-- تحليل حركة الجسم بشكل لحظي
-- عدّ تلقائي للتكرارات
-- تقييم جودة التمرين (جيد / خطأ / خطر)
-- إخراج فيديو محلل
-- نظام تقييم ذكي
-- يعمل على Google Colab
+```bash
+pip install opencv-python tensorflow tensorflow-hub numpy pandas
+```
 
 ---
 
-# الأدوات المستخدمة
-- Python
-- TensorFlow
-- MoveNet
-- OpenCV
-- NumPy
-- Pandas
-- Google Colab
+## How to Run
+
+1. Open the project in Google Colab.
+2. Install the required libraries.
+3. Upload the input video.
+4. Run all notebook cells.
+5. Download the analyzed output video.
 
 ---
 
-# مخرجات النظام
-يوفر النظام:
-- فيديو محلل مع رسم حركة الجسم
-- عداد للتكرارات
-- تتبع زاوية الركبة
-- تقييم لكل تكرار
-- تحليل فوري للحركة
+## Applications
+
+- Fitness coaching
+- Home workout monitoring
+- Sports performance analysis
+- Injury prevention
+- AI-based exercise evaluation
 
 ---
 
-# الخلاصة
-يساعد هذا المشروع المستخدمين على تحسين أداء السكوات باستخدام الذكاء الاصطناعي وتقليل الإصابات عبر التحليل الفوري للحركة.
+## Final Summary
+
+The AI Squat Analysis System uses computer vision and AI pose estimation to track human body movement during squat exercises. It automatically counts repetitions, evaluates exercise quality, measures knee angles, and provides real-time feedback to improve workout performance and reduce injury risk.
+
+---
+
